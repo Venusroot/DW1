@@ -1,6 +1,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="referrer" content="strict-origin-when-cross-origin" />
 <title>Central de IAs</title>
 </head>
 
@@ -8,9 +9,13 @@
 
     <frame src="topo.html" name="topo" scrolling="no" noresize>
 
-    <frameset cols="220,*">
-        <frame src="menu.html" name="menu">
-        <frame src="inicio.html" name="conteudo" scrolling="no">
+    <frameset cols="220,*" border="2px">
+        <frame src="menu.html" name="menu"noresize>
+            <frameset cols="80%, *">
+                 <frame src="inicio.html" name="conteudo" scrolling="no" noresize>
+                 <frame src="descricao.html" name="descricao"noresize>
+            </frameset>
+       
     </frameset>
 
 </frameset>
